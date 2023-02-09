@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/index.css" />
     <title>Søren Nielsen</title>
-    <script src="scripts/burgermenu.js" defer></script>
   </head>
   <body>
     <header>
@@ -14,16 +13,14 @@
         <ul id="main-nav">
           <li><a href="#landing-page">Home</a></li>
           <li><a href="#projects">Projects</a></li>
-          <li><a href="#footer">Contact</a></li>
+          <li><a href="#contact">Contact</a></li>
         </ul>
-        <a href="javascript:void(0);" class="icon" id="burgermenu">
-          <i class="fa fa-bars"></i>
-        </a>
       </nav>
     </header>
-    <section id="landing-page" class="landing-page">
+    <section id="landing-page">
       <div class="context">
-        <h1>Hi, my name is Søren Nielsen I am a Web Developer</h1>
+        <h1>Hi, my name is Søren Nielsen</h1>
+        <h1>I am a Web Developer</h1>
       </div>
       <div class="area">
         <ul class="circles">
@@ -40,8 +37,8 @@
         </ul>
       </div>
     </section>
-    <h2>My Projects</h2>
-    <section id="projects" class="projects-grid">
+    <h2 id="projects">My Projects</h2>
+    <section class="projects-grid">
       <div class="project-container">
         <div class="content">
           <div class="content-overlay"></div>
@@ -50,8 +47,10 @@
             <h3>
               <a href="https://zemafios.github.io/Gourmet-club/" target="_blank">View Project</a>
             </h3>
-            <p>View Code</p>
           </div>
+        </div>
+        <div class="project-mobile">
+          <p><a href="https://zemafios.github.io/Gourmet-club/" target="_blank">View Project</a></p>
         </div>
         <h3>GOURMET CLUB - Le goût infini</h3>
         <div class="project-undertext">
@@ -66,10 +65,12 @@
             <img class="content-image" src="img/eistrup.png" alt="Kasper Eistrup" />
           <div class="content-details fadeIn-top">
             <h3>
-              <a href="https://zemafios.github.io/Kasper-eistrup" target="_blank">View Project</a>
+              <a href="https://zemafios.github.io/Kasper-eistrup/" target="_blank">View Project</a>
             </h3>
-            <p>View Code</p>
           </div>
+        </div>
+        <div class="mobile-project">
+          <p><a href="https://zemafios.github.io/Kasper-eistrup/" target="_blank">View Project</a></p>
         </div>
         <h3>Kasper eistrup</h3>
         <div class="project-undertext">
@@ -84,10 +85,12 @@
             <img class="content-image" src="img/sushi-royal.png" alt="Sushi Royal" />
           <div class="content-details fadeIn-top">
             <h3>
-              <a href="https://zemafios.github.io/Sushi-royal" target="_blank">View Project</a>
+              <a href="https://zemafios.github.io/Sushi-royal/" target="_blank">View Project</a>
             </h3>
-            <p>View Code</p>
           </div>
+        </div>
+        <div class="mobile-project">
+          <p><a href="https://zemafios.github.io/Sushi-royal/" target="_blank">View Project</a></p>
         </div>
         <h3>Sushi Royal</h3>
         <div class="project-undertext">
@@ -104,8 +107,10 @@
             <h3>
               <a href="https://zemafios.github.io/Cryptana-Invest" target="_blank">View Project</a>
             </h3>
-            <p>View Code</p>
           </div>
+        </div>
+        <div class="mobile-project">
+          <p><a href="https://zemafios.github.io/Cryptana-Invest/" target="_blank">View Project</a></p>
         </div>
         <h3>Cryptana Invest</h3>
         <div class="project-undertext">
@@ -115,6 +120,20 @@
         </div>
       </div>
     </section>
-    <footer id="contact" class="contact"></footer>
+    <div id="contact" class="contact">
+        <h2>Contact Info</h2>
+        <div class="row">
+          <div class="phone">
+            <div class="text">
+              <p>Phone: <a href="tel://40475155">40475155</a></p>
+            </div>
+          </div>
+          <div class="email">
+            <div class="text">
+              <p>Email: <a href="mailto:sorennielsen13@hotmail.com">sorennielsen13@hotmail.com</p>
+            </div>
+          </div>
+        </div>
+    </div>
   </body>
 </html>
