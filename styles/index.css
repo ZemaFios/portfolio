@@ -16,16 +16,16 @@ body {
     font-size: 1.6rem;
 }
 
-/* ========= TOP NAV START ========= */
-.topNav {
+/* ====== NAVBAR START ====== */
+.nav-bar {
     width: 100%;
     height: 75px;
     background-color: rgb(38, 39, 48);
     position: fixed;
-    z-index: 1000;
+    z-index: 1;
 }
 
-.topNav ul {
+.nav-bar ul {
     display: flex;
     justify-content: flex-end;
     align-items: center;
@@ -35,18 +35,23 @@ body {
     height: 100%;
 }
 
-.topNav ul li a {
+.nav-bar ul li a {
     color: white;
     padding: 0 1rem;
     text-decoration: none;
     text-transform: uppercase;
     letter-spacing: 2px;
+    font-size: 2rem;
     display: block;
 }
 
-/* ========= TOP NAV ENDING ========= */
+.nav-bar ul li a:hover {
+    color: #dddd;
+}
 
-/* ========= LANDING PAGE START ========= */
+/* ====== NAVBAR ENDING ====== */
+
+/* ====== LANDING PAGE START ====== */
 .context {
     width: 100%;
     position: absolute;
@@ -181,9 +186,9 @@ body {
 
 }
 
-/* ========= LANDING PAGE ENDING ========= */
+/* ====== LANDING PAGE ENDING ====== */
 
-/* ========= PROJECTS START ========= */
+/* ====== PROJECTS START ====== */
 h2 {
     color: white;
     text-align: center;
@@ -309,9 +314,9 @@ h2 {
     display: none;
 }
 
-/* ========= PROJECTS ENDING =========*/
+/* ====== PROJECTS ENDING ======*/
 
-/* ========= CONTACT STARTING ========= */
+/* ====== CONTACT STARTING ====== */
 
 .contact {
     background-color: #1f1f29;
@@ -328,13 +333,7 @@ h2 {
     margin-bottom: 20px;
 }
 
-.row {
-    display: flex;
-    gap: 20px;
-    margin: 0 auto;
-}
-
-.phone, .email {
+.email {
     color: white;
     display: flex;
     flex-direction: column;
@@ -343,12 +342,11 @@ h2 {
 
 .text p {
     font-size: clamp(1rem, 4vw, 2rem);
-    margin-bottom: 5px;
 }
 
-/* ========= CONTACT ENDING ========= */
+/* ====== CONTACT ENDING ====== */
 
-/* ========= MEDIA QUERY STARTING ========= */
+/* ====== MEDIA QUERY STARTING ====== */
 
 @media (max-width: 900px) {
     .project-grid {
@@ -367,6 +365,52 @@ h2 {
     .content-details, .content-overlay {
         display: none;
     }
-}
 
-/* ========= MEDIA QUERY ENDING ========= */
+    .nav-bar ul {
+        display: none;
+        background-color: #1f1f29;
+        padding: 0;
+    }
+
+    .hamburger {
+        display: block;
+        cursor: pointer;
+        margin: 30px;  
+        position: absolute;
+        right: 5px;
+    }
+
+    .nav-list.active {
+        width: 100%;
+        height: 40vh;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        position: absolute;
+        align-items: center;
+        top: 75px;
+    }
+
+    .bar {
+        display: block;
+        width: 25px;
+        height: 3px;
+        margin: 5px auto;
+        -webkit-transition: all 0.3s ease;
+        transition: all 0.3s ease;
+        background-color: white;
+    }
+
+    .hamburger.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    .hamburger.active .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    .hamburger.active .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+}
