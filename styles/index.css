@@ -306,6 +306,9 @@ h2 {
     color: white;
 }
 
+.content-details a:hover {
+    color: #dddd;
+}
 .fadeIn-top {
     top: 20%;
 }
