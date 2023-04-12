@@ -27,7 +27,7 @@ const projectsData = [
     title: 'Cryptana Invest',
     image: 'img/cryptana-invest.png',
     imageAltText: 'Cryptana Invest',
-    projectLink: 'https://zemafios.github.io/Cryptana-invest/',
+    projectLink: 'https://zemafios.github.io/Cryptana-Invest/',
     codeLink: 'https://github.com/ZemaFios/Cryptana-invest',
     undertext: [{ html: 'HTML', css: 'CSS', js: 'JavaScript' }],
   },
