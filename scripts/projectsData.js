@@ -31,6 +31,14 @@ const projectsData = [
     codeLink: 'https://github.com/ZemaFios/Cryptana-invest',
     undertext: [{ html: 'HTML', css: 'CSS', js: 'JavaScript' }],
   },
+  {
+    title: 'Excalibur',
+    image: 'img/excalibur.png',
+    imageAltText: 'Excalibur',
+    projectLink: 'https://cur-53.github.io/excalibur/',
+    codeLink: 'https://github.com/CUR-53/excalibur',
+    undertext: [{ html: 'HTML', css: 'CSS', js: 'JavaScript' }],
+  },
 ];
 
 export default projectsData;
